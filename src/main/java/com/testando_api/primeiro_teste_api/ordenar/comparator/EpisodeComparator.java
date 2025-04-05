@@ -6,7 +6,6 @@ import java.util.Comparator;
 
 public class EpisodeComparator
 {
-
     public static Comparator<EpisodeModel> returnComparatorAvaliation(String ordem)
     {
         return ordem.equalsIgnoreCase("desc") ? Comparator.comparingDouble(EpisodeModel::getAvaliation).reversed() :
