@@ -26,6 +26,7 @@ public class FilmeControler implements ITituloControler, IMenu
         filmeService.carregarDados(dados,omdbApi,filme);
 
         System.out.println(MENU_FILME);
+
         int escolha = LeitorEntrada.returnScannerInteger();
 
         executarOpção(escolha);
